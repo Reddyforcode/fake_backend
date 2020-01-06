@@ -4,6 +4,12 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello"
+@approute("/flutter")
+def flutter():
+    with open("flutter.json") as data_json:
+        data = data_json.read()
+        return data
+    return "json not found"
 
 @app.route("/realestate")
 def a():
