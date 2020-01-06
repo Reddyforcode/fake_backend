@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return "Hello"
-@approute("/flutter")
+@app.route("/flutter", methods =['GET', 'POST'])
 def flutter():
     with open("flutter.json") as data_json:
         data = data_json.read()
