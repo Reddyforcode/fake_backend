@@ -6,8 +6,8 @@ app = Flask(__name__)
 def hello():
     return "Hello"
 
-@app.route("/")
-def hello():
+@app.route("/realestate")
+def realestate():
     return json_realestate
 
 if __name__ == "__main__":
