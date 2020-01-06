@@ -9,7 +9,7 @@ def hello():
 def a():
     with open("fake_json.json") as complex_data:
         data = complex_data.read()
-        print(data)
+        # print(data)
         return data
     return "holo x2"
 
